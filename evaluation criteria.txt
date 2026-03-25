@@ -1,0 +1,52 @@
+Data Quality Checks
+
+1. Columns should be lowercase with spaces are replaced by underscore
+2. Check if datatype are changed properly
+3. Check if nulls/blanks are handled properly
+
+
+Analysis Questions 
+
+% column is optional using that gives extra credit - as percentages are easy to understand than numbers for business people(If not used explain this)
+
+1. Monthly Revenue Trend
+Merge Sales, Products, Exchange Rates. Calculate total revenue USD by month (2024).
+Output: Year | Month | Revenue_USD (12 rows)
+
+2. Peak Month Analysis
+From Q1, identify top 3 revenue months. Calculate % of annual total.
+Output: Month | Revenue_USD | %of_Total
+
+3. Holiday Drivers
+For Q2 peak months, show top 3 product categories driving revenue.
+Output: Category | Peak_Month_Revenue | %of_Peak_Total
+
+4. Delivery Performance
+Calculate overall avg delivery time across all orders.
+Output: Average_Days | Total_Orders
+
+5. Country Delivery Issues
+Avg delivery time by store country. Show slowest 5 countries.
+Output: Country | Avg_Days | Order_Count | Median_Days
+
+6. Channel Performance
+AOV (revenue/orders) by Online vs In-Store across continents (Online = StoreKey.isna()).
+Output: Continent | AOV_Online | AOV_Store | Online_Orders | Store_Orders
+
+7. Volume Leaders
+Top 5 product categories by total units sold.
+Output: Rank | Category | Units_Sold | %of_Total_Units
+
+8. Revenue Leaders
+Top 5 product categories by total revenue USD.
+Output: Rank | Category | Revenue_USD | %of_Total_Revenue
+
+9. Customer Profile
+Customer count and spending by Continent × Gender.
+Output: Continent | Gender | Customer_Count | Total_Spend_USD | Avg_Spend_Per_Cust
+
+10. Customer Loyalty
+Repeat customer rate (% with 2+ orders) by continent.
+Output: Continent | Repeat_Rate_% | Unique_Customers | Repeat_Customers
+
+

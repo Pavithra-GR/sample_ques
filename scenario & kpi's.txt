@@ -1,0 +1,40 @@
+Electronics Retailer Case Study: KPI Analysis Challenge
+
+You are a data analyst at a global electronics retailer with access to five key tables: Sales, Customers, Products, Stores, and Exchange Rates (per data dictionary). Analyze these datasets to compute KPIs and answer business questions. 
+​
+
+Scenario
+
+The company's leadership seeks insights from 2024 sales data to optimize operations amid economic pressures. Focus on recommended analyses: product types and customer locations, seasonal order/revenue patterns, average delivery time trends, and online vs. in-store AOV (Average Order Value) differences.
+​
+
+Analysis Questions
+1. Monthly Revenue Trend
+Merge Sales, Products, Exchange Rates. Calculate total revenue USD by month (2024).
+
+2. Peak Month Analysis
+From Q1, identify top 3 revenue months. Calculate % of annual total.
+
+3. Holiday Drivers
+For Q2 peak months, show top 3 product categories driving revenue.
+
+4. Delivery Performance
+Calculate overall avg delivery time across all orders.
+
+5. Country Delivery Issues
+Avg delivery time by store country. Show slowest 5 countries.
+
+6. Channel Performance
+AOV (revenue/orders) by Online vs In-Store across continents (Online = StoreKey.isna()).
+
+7. Volume Leaders
+Top 5 product categories by total units sold.
+
+8. Revenue Leaders
+Top 5 product categories by total revenue USD.
+
+9. Customer Profile
+Customer count and spending by Continent × Gender.
+
+10. Customer Loyalty
+Repeat customer rate (% with 2+ orders) by continent.
